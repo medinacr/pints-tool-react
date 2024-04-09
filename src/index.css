@@ -1,0 +1,60 @@
+.header {
+  margin-bottom: 20px;
+}
+
+.employee-select option {
+  color: black !important; /* Set the text color to black */
+}
+
+.format {
+  display: flex;
+  flex-direction: row; /* Set the format to a column layout */
+}
+
+.hours {
+  padding-right: 10px;
+}
+
+.employee-hours {
+  width: 50px;
+}
+
+.employee-name {
+  width: 100px;
+}
+
+.total-tip {
+  margin-left: 20px;
+}
+
+.button-container {
+  margin-top: 20px;
+}
+
+.result {
+  display: flex;
+  flex-direction: column;
+}
+
+.tip-amount-submit {
+  padding-right: 40px;
+}
+
+.entry-container {
+  display: flex;
+  margin-top: 20px;
+}
+
+.employee-information {
+  display: flex;
+  align-items: center;
+}
+
+.employee-select {
+  display: flex;
+  padding-right: 20px;
+}
+
+.employee-totalHours {
+  width: 80px;
+}
