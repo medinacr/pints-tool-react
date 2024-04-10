@@ -1,7 +1,7 @@
 {
   "name": "my-react-project",
   "version": "0.1.0",
-  "homepage": "https://medinacr.github.io/pints-tool-react/",
+  "homepage": ".",
   "private": false, 
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
