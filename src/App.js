@@ -1,5 +1,6 @@
 import './App.css';
 import { useState, useEffect } from 'react';
+import moment from 'moment';
 
 function App() {
   const [employeeAmount, setEmployeeAmount] = useState('');
@@ -75,9 +76,9 @@ function App() {
 
   const updateTotalHours = (index, startTime, endTime) => {
     if (startTime && endTime) {
-      const start = new Date(`2024-01-01 ${startTime}`).getTime();
-      const end = new Date(`2024-01-01 ${endTime}`).getTime();
-      const hours = (end - start) / (1000 * 60 * 60);
+      const start = moment(`2024-01-01 ${startTime}`, 'YYYY-MM-DD hh:mm A');
+      const end = moment(`2024-01-01 ${endTime}`, 'YYYY-MM-DD hh:mm A');
+      const hours = end.diff(start, 'hours', true);
       const updatedTotalHours = [...totalHours];
       updatedTotalHours[index] = hours;
       setTotalHours(updatedTotalHours);
